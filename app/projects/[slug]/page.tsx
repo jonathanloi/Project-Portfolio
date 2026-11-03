@@ -87,7 +87,7 @@ export default async function ProjectPage({ params }: Props) {
 
         {/* Tags */}
         <div className="mt-6 flex flex-wrap gap-2">
-          {meta.tags.map((tag) => (
+          {meta.tags.map((tag: string) => (
             <span
               key={tag}
               className="border border-black px-3 py-1 text-xs"
