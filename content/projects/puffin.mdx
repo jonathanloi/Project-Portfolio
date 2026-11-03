@@ -1,0 +1,87 @@
+---
+title: "Puffin"
+description: "Mobile app for tracking asthma inhaler adherence, built with React Native and Expo. Focused on frontend and user interface."
+date: "2025-04"
+displayDate: "April 2025"
+tags: ["React Native", "TypeScript", "UI/UX", "Hardware", "Healthcare"]
+image: "/Puffin/Inhaler.png"
+github: 
+live: 
+featured: true
+imageFit: "contain"
+---
+
+## Overview
+
+**Puffin** is a smart inhaler system developed in collaboration with clinicians from **Changi General Hospital** for my final year capstone project. It consists of a smart casing that detects proper inhaler technique (Shake → Presence → Press) and a companion mobile application that I primarily worked on.
+
+The app receives dosage data via Bluetooth, tracks adherence, sends reminders, and generates reports that clinicians can use to improve asthma management plans.
+
+The Puffin App was built using **Expo + React Native**, allowing it to run on both Android and iOS from a single codebase. The app stores data locally using **SQLite** so that sensitive health information never leaves the user’s device.
+
+## The Problem
+
+Asthma affects a significant portion of Singapore’s population. One of the biggest challenges clinicians face is **poor inhaler adherence**. Patients often forget doses or use their inhalers incorrectly, while doctors lack reliable data to adjust treatment plans.
+
+Existing solutions were either too expensive, lacked proper technique detection, or stored sensitive health data on external servers (raising privacy concerns under PDPA).
+
+## My Role
+
+As an Engineering Product Development (EPD) student, this was my first proper experience with mobile app development. I took ownership of a large portion of the **frontend**, including:
+
+- Designing the overall UI/UX flow
+- Building the main screens and navigation
+- Making the interface clear for both patients and clinicians
+- Iterating based on feedback from doctors at Changi General Hospital
+
+I worked closely with the rest of the team (who handled more of the hardware and backend logic) and learned a lot about React Native, Typescript and designing for real users.
+
+### Frontend Features I Focused On
+
+- **Dashboard**  
+  Clean overview showing weekly adherence statistics, last dosage taken, and quick access to paired devices.
+
+- **Usage History**  
+  List of past doses with timestamps and visual indicators for whether the three key steps (Shake, Presence, Press) were performed correctly.
+
+- **Bluetooth Pairing Flow**  
+  Guided screens that walk the user through connecting one or more Puffin casings and setting up medication details + reminders.
+
+![Dashboard screen](/Puffin/Dashboard.png)
+
+- **Calendar View**  
+  Monthly adherence overview with colour coding:
+  - Green = completed
+  - Yellow = incomplete
+  - Red = missed
+
+- **Symptoms Logging**  
+  Simple interface for patients to record daily symptoms, with visual summaries for clinicians.
+
+- **Guided Tutorial**  
+  Clear step-by-step instructions on correct inhaler technique, based on SingHealth guidelines.
+
+![Calendar screen](/Puffin/Calendar.png)
+
+- **Adherence Reports**  
+  Ability to select a date range and export a PDF report to share with doctors.
+
+- **Asthma Action Plan**  
+  Colour-coded action plan (Green / Yellow / Red) that follows the format used by Changi General Hospital.
+
+![Report screen](/Puffin/Report.png)
+
+## Demo Video
+
+<iframe
+  src="https://www.youtube.com/embed/1MVD7VkGa5U"
+  title="Project demo"
+  className="w-full aspect-video"
+  allowFullScreen
+/>
+
+## What I Learned
+
+This project was a steep but valuable learning experience. Without any prior experience, I had to quickly pick up mobile development concepts, component-based UI, and how to design interfaces that work for both patients and medical professionals. 
+
+Working directly with clinicians also taught me the importance of clear communication and continuous iteration based on real user feedback.
