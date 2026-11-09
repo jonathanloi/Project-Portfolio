@@ -1,0 +1,49 @@
+---
+title: "Project Portfolio"
+description: "My personal website, built with Next.js, TypeScript and Tailwind CSS as a way to learn modern web development."
+date: "2026-10"
+displayDate: "October 2026"
+tags: ["Next.js", "TypeScript", "Tailwind CSS", "MDX", "Frontend"]
+image: "/Portfolio/CoverImage.png"
+github: "https://github.com/jonathanloi/Project-Portfolio"
+featured: true
+imageFit: "cover"
+---
+
+## Overview
+
+This site is a showcase of my past projects and a record of the ones I work on next. It's also how I'm learning web development with Next.js. 
+This post will keep being updated as I build and improve the site.
+
+## Tech and decisions
+
+I chose Next.js because it's popular and because it was a natural step from React, which I used for my capstone project, Puffin. Since Next.js is a React framework, much of it was already familiar. Free deployment on Vercel was another plus.
+
+Project pages are written in MDX, so adding a project means adding a text file instead of changing code.
+
+## Version History
+
+### v1.0 - November 2026
+- First public release with home, about, projects and contact pages
+- MDX project pages with image gallery and project cards 
+- Deployed on Vercel
+
+#### What I learnt
+- Working only in dev mode hides errors, so run 'npm run build' first before pushing
+- Dev mode server can block router functions while on mobile
+- Compress images and check file paths
+
+#### What's next
+- Improve project card and gallery 
+- Add more projects 
+
+<ImageGallery 
+  imagesJson='[
+    {"src":"/Portfolio/Home.png","alt":"Homepage"}, 
+    {"src":"/Portfolio/AllProjects.png","alt":"All projects page"}, 
+    {"src":"/Portfolio/AboutMe.png","alt":"About me page"}, 
+    {"src":"/Portfolio/Contact.png","alt":"Contact page"} 
+  ]' 
+/>
+
+
