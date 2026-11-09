@@ -18,7 +18,7 @@ const components = {
     <h3 className="text-xl font-medium mt-10 mb-3" {...props} />
   ),
   h4: (props: any) => (
-    <h4 className="text-lg font-medium mt-8 mb-2" {...props} />
+    <h4 className="text-lg font-normal mt-4 mb-2" {...props} />
   ),
   p: (props: any) => (
     <p className="leading-relaxed text-neutral-700 mb-5" {...props} />
@@ -29,7 +29,7 @@ const components = {
   ol: (props: any) => (
     <ol className="list-decimal pl-5 mb-5 space-y-1.5" {...props} />
   ),
-  li: (props: any) => <li className="leading-relaxed" {...props} />,
+  li: (props: any) => <li className="leading-relaxed text-neutral-700" {...props} />,
   a: (props: any) => (<a className="underline underline-offset-4 hover:text-neutral-600" {...props} />
   ),
   img: (props: any) => (<img className="my-4 w-full rounded" {...props}/>
@@ -128,7 +128,8 @@ export default async function ProjectPage({ params }: Props) {
             width={1920}
             height={1080}
             sizes="(max-width: 1024px) 100vw, 1024px"
-            className="h-auto max-h-160 w-auto max-w-full object-contain"
+            className="h-auto max-h-160 w-auto max-w-full object-contain rounded"
+            unoptimized
           />
         </div>
       )}
