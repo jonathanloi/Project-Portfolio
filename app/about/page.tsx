@@ -54,31 +54,7 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-
-        {/* Skills */}
-        {/* <div className="mt-20">
-          <h2 className="text-xl font-medium mb-6">Skills & Tools</h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              "React Native",
-              "Expo",
-              "React",
-              "Next.js",
-              "TypeScript",
-              "Tailwind CSS",
-              "JavaScript",
-              "UI/UX",
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="border border-black px-3 py-1 text-sm rounded-sm"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div> */}
-
+        
         {/* CTA */}
         <div className="mt-16 pt-10 border-t border-black">
           <p className="text-neutral-600 mb-6">
