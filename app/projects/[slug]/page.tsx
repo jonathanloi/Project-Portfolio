@@ -37,11 +37,6 @@ const components = {
   blockquote: (props: any) => (<blockquote className="border-l-2 border-black pl-5 italic my-8 text-neutral-700" {...props}/>
   ),
   ImageGallery: ImageGallery,
-  TestBox: () => (
-    <div className="my-8 border border-black p-4 bg-white">
-      MDX components are working
-    </div>
-  ),
 };
 
 export function generateStaticParams() {
